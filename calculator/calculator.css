@@ -1,0 +1,50 @@
+header{
+   margin: auto;
+   width: 30%;
+   height: 10%;
+    font-size: 3em;
+    color:black;
+    text-align: center;
+    background-color:palevioletred;
+    padding: 10px;
+    border-radius: 7px;
+}
+body{
+    background:url('/landing.jpg');
+    background-size: cover;
+}
+h2{
+    margin-left: 100px;
+    margin-right: 700px;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.table{
+    margin: auto;
+   
+    background-color: rgb(60, 72, 200);
+    padding: 20px;
+    border-radius: 7px;
+   width: 40%;
+    height: 60vh;
+  
+    
+}
+input[type=button]{
+
+    background-color: black;
+    color: beige;
+    width: 100%;
+    height: 9vh;
+    border: solid black 2px;
+    font-size: 30px;
+}
+input[type=text]{
+
+    background-color: beige;
+    color: black;
+    width: 98%;
+    height: 9vh;
+    border: solid black 2px;
+    font-size: 30px;
+}
