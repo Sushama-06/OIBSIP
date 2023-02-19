@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <!--------home--------->
+    <section id="home">
+        <header>
+            <div class="d1">SD</div>
+            <div class="d2">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+
+            </div>
+            <div class="d3"> <a href="#contact">Contact</a></div>
+        </header>
+        <nav class="maintext">
+            <div>
+                <br><br><br><br><br>
+                <h3>Hello Guys, I'm</h3>
+                <h1>Sushama Desale</h1>
+                <h5>A web developer intern from Amalner</h5>
+                <p> looking to start my journey as web developer.I'm a quick learner who tries to
+                    gain technical skill and experience</p>
+            </div>
+            <div class="d4">
+
+                <a href="/Sushama cv.jpg" download class="download-btn">Download CV </a>
+            </div>
+
+            <div> <img class="temp" src="/pic.png" alt="My photo"></div>
+        </nav>
+    </section>
+    <!--------about--------->
+
+    <section id="about">
+
+        <div class="about">
+            <h4>I'm a web designer,</h4>
+            <p>
+            <div class="para"> A girl with big dreams who try to make them happen.</div> <br>
+            Hey there,I am Sushama. I am B.Sc. graduate. <br><br>
+            looking to start my journey as front end developer role and
+            my domain of interest is web desiging and development.
+            I am very passionate and dedicated to my work.I enjoy every step of design process.
+            <br><br>
+            I am a quick learner who tries to gain knowlegde of technical skills and experience.
+            I believe to grab all opportunities to evolve
+            </p>
+
+        </div>
+
+    </section>
+    <!--------portfolio--------->
+    <section id="portfolio">
+        <div class="about1">
+            <h1>Portfolio</h1>
+            <h3>Some skills I have acquired</h3>
+            <div><img src="/IMG_20230204_172801.jpg" alt="" class="img1"></div>
+            <div><img src="/IMG_20230204_152717.jpg" alt="" class="img1"></div>
+            <div><img src="/IMG_20230204_152702.jpg" alt="" class="img1"></div>
+            <div><img src="/IMG_20230204_172811.jpg" alt="" class="img1"></div>
+            <div><img src="/IMG_20230204_152930.jpg" alt="" class="img1"></div>
+            <div><img src="/IMG_20230204_152918.jpg" alt="" class="img1"></div>
+        </div>
+
+    </section>
+    <!--------contact--------->
+    <section id="contact">
+        <div class="about">
+            <h1>Contact</h1>
+
+            <div class="input">
+                <input type="text" placeholder="Email ID" id="email"><br><br>
+                <input type="text" placeholder="Name" id="name"><br><br>
+                <button onclick="submit()">Submit</button><br>
+                <h2> Contact with Linkedin</h2>
+                <div class="link">
+                    <a href="https://www.linkedin.com/in/sushama-desale-062ab625a" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        function submit() {
+            let key = document.getElementById("email").value;
+            let val = document.getElementById("name").value;
+
+            localStorage.setItem(key, val);
+            document.getElementById("email").value = ""
+            document.getElementById("name").value = ""
+        }
+    </script>
+
+</body>
+
+</html>
